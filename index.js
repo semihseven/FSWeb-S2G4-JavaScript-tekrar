@@ -124,8 +124,8 @@ sayilar.forEach(uceBolunebiliyorMu);
 console.log(ucetambolunenler);
 // 3c çözümü:
 
-/* kodlar buraya */
-
+ucebolunenlerintoplami = ucetambolunenler.reduce((total , item) => total +=item)
+console.log(ucebolunenlerintoplami)
 // 3d çözümü
 
 /* kodlar buraya */
