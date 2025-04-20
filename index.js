@@ -89,7 +89,7 @@ console.log(CemberinAlani(15,pi))
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let ucetambolunenler,
+let ucetambolunenler = [],
   enkucuk=1000,
   enbuyuk=0,
   ucebolunenlerintoplami,
@@ -105,7 +105,6 @@ for(let i=0;i<sayilar.length;i++) {
   }
 }
 console.log(enbuyuk);
-// 3b çözümü:
 
 for(let i=0;i<sayilar.length;i++) {
   if(sayilar[i]<enkucuk) {
@@ -113,6 +112,16 @@ for(let i=0;i<sayilar.length;i++) {
   }
 }
 console.log(enkucuk);
+// 3b çözümü:
+
+function uceBolunebiliyorMu(item) {
+  if (item % 3 === 0) {
+    ucetambolunenler.push(item);
+  }
+}
+sayilar.forEach(uceBolunebiliyorMu);
+
+console.log(ucetambolunenler);
 // 3c çözümü:
 
 /* kodlar buraya */
