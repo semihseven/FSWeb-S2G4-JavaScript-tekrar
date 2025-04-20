@@ -90,7 +90,7 @@ console.log(CemberinAlani(15,pi))
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
 let ucetambolunenler,
-  enkucuk,
+  enkucuk=1000,
   enbuyuk=0,
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
@@ -107,8 +107,12 @@ for(let i=0;i<sayilar.length;i++) {
 console.log(enbuyuk);
 // 3b çözümü:
 
-/* kodlar buraya */
-
+for(let i=0;i<sayilar.length;i++) {
+  if(sayilar[i]<enkucuk) {
+    enkucuk = sayilar[i];
+  }
+}
+console.log(enkucuk);
 // 3c çözümü:
 
 /* kodlar buraya */
