@@ -91,7 +91,7 @@ console.log(CemberinAlani(15,pi))
 
 let ucetambolunenler,
   enkucuk,
-  enbuyuk,
+  enbuyuk=0,
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar,
